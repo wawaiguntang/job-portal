@@ -33,6 +33,7 @@
 		"css.gg": "^2.0.0",
 		"daisyui": "^2.11.0",
 		"ikonate": "^1.0.0",
+		"mini-svg-data-uri": "^1.4.4",
 		"remixicon": "^2.5.0"
 	}
 }
