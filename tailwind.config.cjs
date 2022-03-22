@@ -4,7 +4,7 @@ const config = {
 
 	theme: {
 		screens: {
-			xs: '440px',
+			xs: { min: '240px' },
 			// => @media (min-width: 440px) { ... }
 
 			sm: '640px',

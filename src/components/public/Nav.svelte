@@ -1,16 +1,22 @@
 <script>
-    import LinkNav from './LinkNav.svelte';
-    import ButtonNav from './ButtonNav.svelte';
-	import 'remixicon/fonts/remixicon.css'
+	import LinkNav from './LinkNav.svelte';
+	import ButtonNav from './ButtonNav.svelte';
+	import 'remixicon/fonts/remixicon.css';
 </script>
+
 <nav class="bg-white border-gray-200 xs:px-0 sm:px-4 py-2.5 rounded dark:bg-gray-800">
-	<div class="container flex flex-wrap justify-between items-center mx-auto">
+	<div
+		class="md:container xs:px-3 md:px-0 sm:px-0 flex flex-wrap justify-between items-center mx-auto"
+	>
 		<a href="/" class="flex items-center">
 			<img src="/logo.svg" class="mr-3 h-10" alt="UACAK Logo" />
-			<span class="xs:invisible sm:visible self-center text-xl font-semibold whitespace-nowrap dark:text-white">UACAK</span>
+			<span
+				class="xs:invisible sm:visible  self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+				>UACAK</span
+			>
 		</a>
 		<div class="flex md:order-2">
-            <ButtonNav text="Login" icon='<i class="ri-arrow-right-line ml-2"></i>' action=""/>
+			<ButtonNav text="Login" icon="<i class='ri-arrow-right-line ml-2'></i>" action="" />
 			<button
 				data-collapse-toggle="mobile-menu-4"
 				id="dropdownButton"
@@ -56,13 +62,13 @@
 					<LinkNav text="JOBS" link="/jobs" />
 				</li>
 				<li>
-					<LinkNav text="COMPANIES" link="/companies"  />
+					<LinkNav text="COMPANIES" link="/companies" />
 				</li>
 				<li>
-					<LinkNav text="BLOG" link="/blog"  />
+					<LinkNav text="BLOG" link="/blog" />
 				</li>
 				<li>
-					<LinkNav text="CONTACT" link="/contact"  />
+					<LinkNav text="CONTACT" link="/contact" />
 				</li>
 			</ul>
 		</div>
