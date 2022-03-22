@@ -4,7 +4,7 @@
 	import Button from '../../components/public/Button.svelte';
 </script>
 
-<div class="container mx-auto px-10 mt-5">
+<div class="container mx-auto px-10 mt-5 xs:mt-0 xs:mx-auto md:mt-5 md:mx-auto">
 	<Nav />
 	<hr />
 	<div class="sm:grid sm:grid-flow-row sm:gap-3 xs:grid xs:grid-flow-row xs:gap-3 md:flex md:flex-row px-4 mt-6">
