@@ -30,7 +30,9 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"css.gg": "^2.0.0",
 		"daisyui": "^2.11.0",
-		"ikonate": "^1.1.1"
+		"ikonate": "^1.0.0",
+		"remixicon": "^2.5.0"
 	}
 }
