@@ -365,38 +365,40 @@
 		</div>
 		<div class=" xs:px-4 sm:px-4 md:col-span-2">
 			<div class="xs:flex xs:flex-col sm:flex sm:flex-col md:flex md:flex-col lg:grid lg:grid-cols-2 lg:gap-3 overflow-y-auto xs:max-h-[68vh] sm:max-h-[75vh] md:max-h-[78vh]">
-				<div class="xs:my-2 sm:my-2 md:my-2 lg:my-0 xs:basis-[100%] sm:basis-[100%] md:basis-[100%]">
-					<div class=" rounded-lg border-2">
-						<div class="grid grid-flow-row auto-rows-max m-3">
-							<div class="flex justify-between">
-								<div class="flex ">
-									<div class="w-14 h-14 bg-slate-500 rounded-lg bg-cover" style="background-image: url(https://picsum.photos/200/300?random=1)"></div>
-									<div class="ml-2">
-										<p class="text-lg font-semibold">Banking Back Office</p>
-										<a href="/" class="text-sm cursor-pointer hover:text-blue-500">PT. Mutualplus Global Resource</a>
+				<div class="xs:my-2 sm:my-2 md:my-2 lg:my-0 xs:basis-[100%] sm:basis-[100%] md:basis-[100%]">			
+					<a href="/jobs/banking-back-office">
+						<div class=" rounded-lg border-2">
+							<div class="grid grid-flow-row auto-rows-max m-3">
+								<div class="flex justify-between">
+									<div class="flex ">
+										<div class="w-14 h-14 bg-slate-500 rounded-lg bg-cover" style="background-image: url(https://picsum.photos/200/300?random=1)"></div>
+										<div class="ml-2">
+											<p class="text-lg font-semibold">Banking Back Office</p>
+											<a href="/" class="text-sm cursor-pointer hover:text-blue-500">PT. Mutualplus Global Resource</a>
+										</div>
 									</div>
+									<i class="ri-bookmark-line ri-xl hover:text-blue-500 cursor-pointer"></i>
 								</div>
-								<i class="ri-bookmark-line ri-xl hover:text-blue-500 cursor-pointer"></i>
-							</div>
-							<div class="flex flex-row mt-2 items-center">
-								<i class="ri-map-pin-2-fill ri-lg"></i> 
-								<p class="font-semibold ml-1">Senen, Jakarta</p>
-							</div>
-							<div class="flex flex-row mt-2 items-center">
-								<i class="ri-money-dollar-circle-line ri-lg"></i>
-								<p class="ml-1 font-semibold text-sm">IDR 4.500.000 - 8.000.000</p>
-							</div>
-							<div class="flex flex-row mt-2 items-center">
-								<i class="ri-briefcase-2-line"></i>
-								<p class="ml-1 font-semibold text-sm">3 - 5 years</p>
-							</div>
-							<div class="flex flex-row mt-2 items-center">
-								<button type="button" class="p-1 pr-2 text-xs bg-lime-600 rounded-xl text-white flex items-center"><i class="ri-calendar-line mr-1"></i> Actively Hiring</button>
-								<i class="ri-time-line ri-md text-gray-400 ml-2"></i>
-								<p class="ml-1 font-semibold text-sm text-gray-400">Created 1 month ago</p>
+								<div class="flex flex-row mt-2 items-center">
+									<i class="ri-map-pin-2-fill ri-lg"></i> 
+									<p class="font-semibold ml-1">Senen, Jakarta</p>
+								</div>
+								<div class="flex flex-row mt-2 items-center">
+									<i class="ri-money-dollar-circle-line ri-lg"></i>
+									<p class="ml-1 font-semibold text-sm">IDR 4.500.000 - 8.000.000</p>
+								</div>
+								<div class="flex flex-row mt-2 items-center">
+									<i class="ri-briefcase-2-line"></i>
+									<p class="ml-1 font-semibold text-sm">3 - 5 years</p>
+								</div>
+								<div class="flex flex-row mt-2 items-center">
+									<button type="button" class="p-1 pr-2 text-xs bg-lime-600 rounded-xl text-white flex items-center"><i class="ri-calendar-line mr-1"></i> Actively Hiring</button>
+									<i class="ri-time-line ri-md text-gray-400 ml-2"></i>
+									<p class="ml-1 font-semibold text-sm text-gray-400">Created 1 month ago</p>
+								</div>
 							</div>
 						</div>
-					</div>
+					</a>
 				</div>
 				<div class="xs:my-2 sm:my-2 md:my-2 lg:my-0 xs:basis-[100%] sm:basis-[100%] md:basis-[100%]">
 					<div class=" rounded-lg border-2">
@@ -432,37 +434,39 @@
 					</div>
 				</div>
 				<div class="xs:my-2 sm:my-2 md:my-2 lg:my-0 xs:basis-[100%] sm:basis-[100%] md:basis-[100%]">
-					<div class=" rounded-lg border-2">
-						<div class="grid grid-flow-row auto-rows-max m-3">
-							<div class="flex justify-between">
-								<div class="flex ">
-									<div class="w-14 h-14 bg-slate-500 rounded-lg bg-cover" style="background-image: url(https://picsum.photos/200/300?random=3)"></div>
-									<div class="ml-2">
-										<p class="text-lg font-semibold">Senior QA Engineer</p>
-										<a href="/" class="text-sm cursor-pointer hover:text-blue-500">Dropsuite</a>
+					<a href="/jobs/senior-qa-enginner">
+						<div class=" rounded-lg border-2">
+							<div class="grid grid-flow-row auto-rows-max m-3">
+								<div class="flex justify-between">
+									<div class="flex ">
+										<div class="w-14 h-14 bg-slate-500 rounded-lg bg-cover" style="background-image: url(https://picsum.photos/200/300?random=3)"></div>
+										<div class="ml-2">
+											<p class="text-lg font-semibold">Senior QA Engineer</p>
+											<a href="/" class="text-sm cursor-pointer hover:text-blue-500">Dropsuite</a>
+										</div>
 									</div>
+									<i class="ri-bookmark-line ri-xl hover:text-blue-500 cursor-pointer"></i>
 								</div>
-								<i class="ri-bookmark-line ri-xl hover:text-blue-500 cursor-pointer"></i>
-							</div>
-							<div class="flex flex-row mt-2 items-center">
-								<i class="ri-map-pin-2-fill ri-lg"></i> 
-								<p class="font-semibold ml-1">Bandung</p>
-							</div>
-							<div class="flex flex-row mt-2 items-center">
-								<i class="ri-money-dollar-circle-line ri-lg"></i>
-								<p class="ml-1 font-semibold text-xs"><a href="/" class="text-blue-500 hover:text-blue-800">Login</a> to view salary by uacak</p>
-							</div>
-							<div class="flex flex-row mt-2 items-center">
-								<i class="ri-briefcase-2-line"></i>
-								<p class="ml-1 font-semibold text-sm">3 - 5 years</p>
-							</div>
-							<div class="flex flex-row mt-2 items-center">
-								<button type="button" class="p-1 pr-2 text-xs bg-red-600 rounded-xl text-white flex items-center"><i class="ri-close-line mr-1"></i>Closed</button>
-								<i class="ri-time-line ri-md text-gray-400 ml-2"></i>
-								<p class="ml-1 font-semibold text-sm text-gray-400">Created 5 days ago</p>
+								<div class="flex flex-row mt-2 items-center">
+									<i class="ri-map-pin-2-fill ri-lg"></i> 
+									<p class="font-semibold ml-1">Bandung</p>
+								</div>
+								<div class="flex flex-row mt-2 items-center">
+									<i class="ri-money-dollar-circle-line ri-lg"></i>
+									<p class="ml-1 font-semibold text-xs"><a href="/" class="text-blue-500 hover:text-blue-800">Login</a> to view salary by uacak</p>
+								</div>
+								<div class="flex flex-row mt-2 items-center">
+									<i class="ri-briefcase-2-line"></i>
+									<p class="ml-1 font-semibold text-sm">3 - 5 years</p>
+								</div>
+								<div class="flex flex-row mt-2 items-center">
+									<button type="button" class="p-1 pr-2 text-xs bg-red-600 rounded-xl text-white flex items-center"><i class="ri-close-line mr-1"></i>Closed</button>
+									<i class="ri-time-line ri-md text-gray-400 ml-2"></i>
+									<p class="ml-1 font-semibold text-sm text-gray-400">Created 5 days ago</p>
+								</div>
 							</div>
 						</div>
-					</div>
+					</a>
 				</div>
 				<div class="xs:my-2 sm:my-2 md:my-2 lg:my-0 xs:basis-[100%] sm:basis-[100%] md:basis-[100%]">
 					<div class=" rounded-lg border-2">
