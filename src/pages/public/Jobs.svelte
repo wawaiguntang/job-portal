@@ -7,6 +7,8 @@
 	let accordion2 = true;
 	let accordion3 = true;
 	let accordion4 = true;
+
+	let filter = false;
 </script>
 
 <div class="xs:mt-0 xs:mx-auto md:container md:px-10 md:mt-5 md:mx-auto">
@@ -16,7 +18,7 @@
 		class="sm:grid sm:grid-flow-row sm:gap-3 xs:grid xs:grid-flow-row xs:gap-3 md:flex md:flex-row px-4 mt-6"
 	>
 		<div class="basis-2/4 md:mr-2">
-			<Input icon="<i class='ri-search-line'></i>" placeholder="Search jobs" />
+			<Input icon="<i class='ri-search-line focus:blue-500'></i>" placeholder="Search jobs" />
 		</div>
 		<div class="basis-2/4 flex flex-row md:ml-2">
 			<div class="basis-[100%] mr-1">
@@ -27,7 +29,10 @@
 			</div>
 		</div>
 	</div>
-	<div class="grid grid-cols-3 mt-6">
+	<div class="flex justify-center px-4">
+		<button type="button" class="basis-4/4 w-full rounded-2xl bg-transparent border-2 border-gray-300 text-slate-500 py-1 px-12 my-3 md:hidden">Filter</button>
+	</div>
+	<div class="{(filter == false)?"xs:hidden sm:hidden":""} sm:flex md:grid grid-cols-3 mt-6">
 		<div class="col-span-1 px-4">
 			<div class="border-2 border-slate-200 rounded-lg">
 				<div class="h-12 flex justify-between items-center pl-5 w-full font-medium text-left">
