@@ -364,7 +364,7 @@
 			</div>
 		</div>
 		<div class=" xs:px-4 sm:px-4 md:col-span-2">
-			<div class="xs:flex xs:flex-col lg:grid lg:grid-cols-2 gap-3 overflow-y-auto xs:max-h-[68vh] sm:max-h-[75vh] md:max-h-[78vh]">
+			<div class="xs:flex xs:flex-col sm:flex sm:flex-col lg:grid lg:grid-cols-2 gap-3 overflow-y-auto xs:max-h-[68vh] sm:max-h-[75vh] md:max-h-[78vh]">
 				<div class="xs:basis-[100%] sm:basis-[100%] md:basis-[100%]">
 					<div class=" rounded-lg border-2">
 						<div class="grid grid-flow-row auto-rows-max m-3">
