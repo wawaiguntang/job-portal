@@ -11,7 +11,7 @@
 	let filter = false;
 </script>
 
-<div class="xs:mt-0 xs:mx-auto md:container md:px-10 md:mt-5 md:mx-auto">
+<div class="xs:mt-0 xs:mx-auto lg:container lg:px-10 lg:mt-5 lg:mx-auto">
 	<Nav />
 	<hr />
 	<div
@@ -30,13 +30,14 @@
 		</div>
 	</div>
 	<div class="flex justify-center px-4">
-		<button type="button" class="basis-4/4 w-full rounded-2xl bg-transparent border-2 border-gray-300 text-slate-500 py-1 px-12 my-3 md:hidden">Filter</button>
+		<button type="button" on:click="{()=>{filter = !filter}}" class="basis-4/4 w-full rounded-3xl items-center bg-transparent border-2 border-gray-300 text-slate-500 px-12 mt-3 md:hidden"><i class="ri-equalizer-fill"></i> Filter</button>
 	</div>
-	<div class="{(filter == false)?"xs:hidden sm:hidden":""} sm:flex md:grid grid-cols-3 mt-6">
-		<div class="col-span-1 px-4">
-			<div class="border-2 border-slate-200 rounded-lg">
+	<div class="xs:grid sm:grid md:grid md:grid-cols-3 mt-6">
+		<div class="{(filter == false)?"xs:hidden sm:hidden md:block":""} xs:px-4 sm:px-4  md:col-span-1">
+			<div class="overflow-y-auto xs:max-h-[68vh] sm:max-h-[75vh] md:max-h-[78vh] border-2 border-gray-300 rounded-lg ">
 				<div class="h-12 flex justify-between items-center pl-5 w-full font-medium text-left">
 					<p class="font-semibold text-lg">Filter your search</p>
+					<button class="text-xs mr-3 font-inter text-red-700">Reset</button>
 				</div>
 				<hr />
 
@@ -270,7 +271,7 @@
 							/>
 						</div>
 						<div class="px-4 my-2">
-							<div class="grid grid-rows-4 grid-flow-col gap-2">
+							<div class="grid grid-flow-row auto-rows-max gap-2">
 								<div>
 									<input
 										id="jobcategories1"
@@ -362,6 +363,306 @@
 				{/if}
 			</div>
 		</div>
-		<div class="col-span-2 bg-zinc-50">asd</div>
+		<div class=" xs:px-4 sm:px-4 md:col-span-2">
+			<div class="xs:flex xs:flex-col lg:grid lg:grid-cols-2 gap-3 overflow-y-auto xs:max-h-[68vh] sm:max-h-[75vh] md:max-h-[78vh]">
+				<div class="xs:basis-[100%] sm:basis-[100%] md:basis-[100%]">
+					<div class=" rounded-lg border-2">
+						<div class="grid grid-flow-row auto-rows-max m-3">
+							<div class="flex justify-between">
+								<div class="flex ">
+									<div class="w-14 h-14 bg-slate-500 rounded-lg bg-cover" style="background-image: url(https://picsum.photos/200/300?random=1)"></div>
+									<div class="ml-2">
+										<p class="text-lg font-semibold">Banking Back Office</p>
+										<a href="/" class="text-sm cursor-pointer hover:text-blue-500">PT. Mutualplus Global Resource</a>
+									</div>
+								</div>
+								<i class="ri-bookmark-line ri-xl hover:text-blue-500 cursor-pointer"></i>
+							</div>
+							<div class="flex flex-row mt-2 items-center">
+								<i class="ri-map-pin-2-fill ri-lg"></i> 
+								<p class="font-semibold ml-1">Senen, Jakarta</p>
+							</div>
+							<div class="flex flex-row mt-2 items-center">
+								<i class="ri-money-dollar-circle-line ri-lg"></i>
+								<p class="ml-1 font-semibold text-sm">IDR 4.500.000 - 8.000.000</p>
+							</div>
+							<div class="flex flex-row mt-2 items-center">
+								<i class="ri-briefcase-2-line"></i>
+								<p class="ml-1 font-semibold text-sm">3 - 5 years</p>
+							</div>
+							<div class="flex flex-row mt-2 items-center">
+								<button type="button" class="p-1 pr-2 text-xs bg-lime-600 rounded-xl text-white flex items-center"><i class="ri-calendar-line mr-1"></i> Actively Hiring</button>
+								<i class="ri-time-line ri-md text-gray-400 ml-2"></i>
+								<p class="ml-1 font-semibold text-sm text-gray-400">Created 1 month ago</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="xs:basis-[100%] sm:basis-[100%] md:basis-[100%]">
+					<div class=" rounded-lg border-2">
+						<div class="grid grid-flow-row auto-rows-max m-3">
+							<div class="flex justify-between">
+								<div class="flex ">
+									<div class="w-14 h-14 bg-slate-500 rounded-lg bg-cover" style="background-image: url(https://picsum.photos/200/300?random=2)"></div>
+									<div class="ml-2">
+										<p class="text-lg font-semibold">Senior QA Engineer</p>
+										<a href="/" class="text-sm cursor-pointer hover:text-blue-500">Dropsuite</a>
+									</div>
+								</div>
+								<i class="ri-bookmark-line ri-xl hover:text-blue-500 cursor-pointer"></i>
+							</div>
+							<div class="flex flex-row mt-2 items-center">
+								<i class="ri-map-pin-2-fill ri-lg"></i> 
+								<p class="font-semibold ml-1">Bandung</p>
+							</div>
+							<div class="flex flex-row mt-2 items-center">
+								<i class="ri-money-dollar-circle-line ri-lg"></i>
+								<p class="ml-1 font-semibold text-sm">IDR 10.500.000 - 18.000.000</p>
+							</div>
+							<div class="flex flex-row mt-2 items-center">
+								<i class="ri-briefcase-2-line"></i>
+								<p class="ml-1 font-semibold text-sm">3 - 5 years</p>
+							</div>
+							<div class="flex flex-row mt-2 items-center">
+								<button type="button" class="p-1 pr-2 text-xs bg-red-600 rounded-xl text-white flex items-center"><i class="ri-close-line mr-1"></i>Closed</button>
+								<i class="ri-time-line ri-md text-gray-400 ml-2"></i>
+								<p class="ml-1 font-semibold text-sm text-gray-400">Created 5 days ago</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="xs:basis-[100%] sm:basis-[100%] md:basis-[100%]">
+					<div class=" rounded-lg border-2">
+						<div class="grid grid-flow-row auto-rows-max m-3">
+							<div class="flex justify-between">
+								<div class="flex ">
+									<div class="w-14 h-14 bg-slate-500 rounded-lg bg-cover" style="background-image: url(https://picsum.photos/200/300?random=3)"></div>
+									<div class="ml-2">
+										<p class="text-lg font-semibold">Senior QA Engineer</p>
+										<a href="/" class="text-sm cursor-pointer hover:text-blue-500">Dropsuite</a>
+									</div>
+								</div>
+								<i class="ri-bookmark-line ri-xl hover:text-blue-500 cursor-pointer"></i>
+							</div>
+							<div class="flex flex-row mt-2 items-center">
+								<i class="ri-map-pin-2-fill ri-lg"></i> 
+								<p class="font-semibold ml-1">Bandung</p>
+							</div>
+							<div class="flex flex-row mt-2 items-center">
+								<i class="ri-money-dollar-circle-line ri-lg"></i>
+								<p class="ml-1 font-semibold text-xs"><a href="/" class="text-blue-500 hover:text-blue-800">Login</a> to view salary by uacak</p>
+							</div>
+							<div class="flex flex-row mt-2 items-center">
+								<i class="ri-briefcase-2-line"></i>
+								<p class="ml-1 font-semibold text-sm">3 - 5 years</p>
+							</div>
+							<div class="flex flex-row mt-2 items-center">
+								<button type="button" class="p-1 pr-2 text-xs bg-red-600 rounded-xl text-white flex items-center"><i class="ri-close-line mr-1"></i>Closed</button>
+								<i class="ri-time-line ri-md text-gray-400 ml-2"></i>
+								<p class="ml-1 font-semibold text-sm text-gray-400">Created 5 days ago</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="xs:basis-[100%] sm:basis-[100%] md:basis-[100%]">
+					<div class=" rounded-lg border-2">
+						<div class="grid grid-flow-row auto-rows-max m-3">
+							<div class="flex justify-between">
+								<div class="flex ">
+									<div class="w-14 h-14 bg-slate-500 rounded-lg bg-cover" style="background-image: url(https://picsum.photos/200/300?random=4)"></div>
+									<div class="ml-2">
+										<p class="text-lg font-semibold">Senior QA Engineer</p>
+										<a href="/" class="text-sm cursor-pointer hover:text-blue-500">Dropsuite</a>
+									</div>
+								</div>
+								<i class="ri-bookmark-line ri-xl hover:text-blue-500 cursor-pointer"></i>
+							</div>
+							<div class="flex flex-row mt-2 items-center">
+								<i class="ri-map-pin-2-fill ri-lg"></i> 
+								<p class="font-semibold ml-1">Bandung</p>
+							</div>
+							<div class="flex flex-row mt-2 items-center">
+								<i class="ri-money-dollar-circle-line ri-lg"></i>
+								<p class="ml-1 font-semibold text-sm">IDR 10.500.000 - 18.000.000</p>
+							</div>
+							<div class="flex flex-row mt-2 items-center">
+								<i class="ri-briefcase-2-line"></i>
+								<p class="ml-1 font-semibold text-sm">3 - 5 years</p>
+							</div>
+							<div class="flex flex-row mt-2 items-center">
+								<button type="button" class="p-1 pr-2 text-xs bg-red-600 rounded-xl text-white flex items-center"><i class="ri-close-line mr-1"></i>Closed</button>
+								<i class="ri-time-line ri-md text-gray-400 ml-2"></i>
+								<p class="ml-1 font-semibold text-sm text-gray-400">Created 5 days ago</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="xs:basis-[100%] sm:basis-[100%] md:basis-[100%]">
+					<div class=" rounded-lg border-2">
+						<div class="grid grid-flow-row auto-rows-max m-3">
+							<div class="flex justify-between">
+								<div class="flex ">
+									<div class="w-14 h-14 bg-slate-500 rounded-lg bg-cover" style="background-image: url(https://picsum.photos/200/300?random=5)"></div>
+									<div class="ml-2">
+										<p class="text-lg font-semibold">Senior QA Engineer</p>
+										<a href="/" class="text-sm cursor-pointer hover:text-blue-500">Dropsuite</a>
+									</div>
+								</div>
+								<i class="ri-bookmark-line ri-xl hover:text-blue-500 cursor-pointer"></i>
+							</div>
+							<div class="flex flex-row mt-2 items-center">
+								<i class="ri-map-pin-2-fill ri-lg"></i> 
+								<p class="font-semibold ml-1">Bandung</p>
+							</div>
+							<div class="flex flex-row mt-2 items-center">
+								<i class="ri-money-dollar-circle-line ri-lg"></i>
+								<p class="ml-1 font-semibold text-sm">IDR 10.500.000 - 18.000.000</p>
+							</div>
+							<div class="flex flex-row mt-2 items-center">
+								<i class="ri-briefcase-2-line"></i>
+								<p class="ml-1 font-semibold text-sm">3 - 5 years</p>
+							</div>
+							<div class="flex flex-row mt-2 items-center">
+								<button type="button" class="p-1 pr-2 text-xs bg-red-600 rounded-xl text-white flex items-center"><i class="ri-close-line mr-1"></i>Closed</button>
+								<i class="ri-time-line ri-md text-gray-400 ml-2"></i>
+								<p class="ml-1 font-semibold text-sm text-gray-400">Created 5 days ago</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="xs:basis-[100%] sm:basis-[100%] md:basis-[100%]">
+					<div class=" rounded-lg border-2">
+						<div class="grid grid-flow-row auto-rows-max m-3">
+							<div class="flex justify-between">
+								<div class="flex ">
+									<div class="w-14 h-14 bg-slate-500 rounded-lg bg-cover" style="background-image: url(https://picsum.photos/200/300?random=5)"></div>
+									<div class="ml-2">
+										<p class="text-lg font-semibold">Senior QA Engineer</p>
+										<a href="/" class="text-sm cursor-pointer hover:text-blue-500">Dropsuite</a>
+									</div>
+								</div>
+								<i class="ri-bookmark-line ri-xl hover:text-blue-500 cursor-pointer"></i>
+							</div>
+							<div class="flex flex-row mt-2 items-center">
+								<i class="ri-map-pin-2-fill ri-lg"></i> 
+								<p class="font-semibold ml-1">Bandung</p>
+							</div>
+							<div class="flex flex-row mt-2 items-center">
+								<i class="ri-money-dollar-circle-line ri-lg"></i>
+								<p class="ml-1 font-semibold text-sm">IDR 10.500.000 - 18.000.000</p>
+							</div>
+							<div class="flex flex-row mt-2 items-center">
+								<i class="ri-briefcase-2-line"></i>
+								<p class="ml-1 font-semibold text-sm">3 - 5 years</p>
+							</div>
+							<div class="flex flex-row mt-2 items-center">
+								<button type="button" class="p-1 pr-2 text-xs bg-red-600 rounded-xl text-white flex items-center"><i class="ri-close-line mr-1"></i>Closed</button>
+								<i class="ri-time-line ri-md text-gray-400 ml-2"></i>
+								<p class="ml-1 font-semibold text-sm text-gray-400">Created 5 days ago</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="xs:basis-[100%] sm:basis-[100%] md:basis-[100%]">
+					<div class=" rounded-lg border-2">
+						<div class="grid grid-flow-row auto-rows-max m-3">
+							<div class="flex justify-between">
+								<div class="flex ">
+									<div class="w-14 h-14 bg-slate-500 rounded-lg bg-cover" style="background-image: url(https://picsum.photos/200/300?random=6)"></div>
+									<div class="ml-2">
+										<p class="text-lg font-semibold">Senior QA Engineer</p>
+										<a href="/" class="text-sm cursor-pointer hover:text-blue-500">Dropsuite</a>
+									</div>
+								</div>
+								<i class="ri-bookmark-line ri-xl hover:text-blue-500 cursor-pointer"></i>
+							</div>
+							<div class="flex flex-row mt-2 items-center">
+								<i class="ri-map-pin-2-fill ri-lg"></i> 
+								<p class="font-semibold ml-1">Bandung</p>
+							</div>
+							<div class="flex flex-row mt-2 items-center">
+								<i class="ri-money-dollar-circle-line ri-lg"></i>
+								<p class="ml-1 font-semibold text-sm">IDR 10.500.000 - 18.000.000</p>
+							</div>
+							<div class="flex flex-row mt-2 items-center">
+								<i class="ri-briefcase-2-line"></i>
+								<p class="ml-1 font-semibold text-sm">3 - 5 years</p>
+							</div>
+							<div class="flex flex-row mt-2 items-center">
+								<button type="button" class="p-1 pr-2 text-xs bg-red-600 rounded-xl text-white flex items-center"><i class="ri-close-line mr-1"></i>Closed</button>
+								<i class="ri-time-line ri-md text-gray-400 ml-2"></i>
+								<p class="ml-1 font-semibold text-sm text-gray-400">Created 5 days ago</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="xs:basis-[100%] sm:basis-[100%] md:basis-[100%]">
+					<div class=" rounded-lg border-2">
+						<div class="grid grid-flow-row auto-rows-max m-3">
+							<div class="flex justify-between">
+								<div class="flex ">
+									<div class="w-14 h-14 bg-slate-500 rounded-lg bg-cover" style="background-image: url(https://picsum.photos/200/300?random=7)"></div>
+									<div class="ml-2">
+										<p class="text-lg font-semibold">Senior QA Engineer</p>
+										<a href="/" class="text-sm cursor-pointer hover:text-blue-500">Dropsuite</a>
+									</div>
+								</div>
+								<i class="ri-bookmark-line ri-xl hover:text-blue-500 cursor-pointer"></i>
+							</div>
+							<div class="flex flex-row mt-2 items-center">
+								<i class="ri-map-pin-2-fill ri-lg"></i> 
+								<p class="font-semibold ml-1">Bandung</p>
+							</div>
+							<div class="flex flex-row mt-2 items-center">
+								<i class="ri-money-dollar-circle-line ri-lg"></i>
+								<p class="ml-1 font-semibold text-sm">IDR 10.500.000 - 18.000.000</p>
+							</div>
+							<div class="flex flex-row mt-2 items-center">
+								<i class="ri-briefcase-2-line"></i>
+								<p class="ml-1 font-semibold text-sm">3 - 5 years</p>
+							</div>
+							<div class="flex flex-row mt-2 items-center">
+								<button type="button" class="p-1 pr-2 text-xs bg-red-600 rounded-xl text-white flex items-center"><i class="ri-close-line mr-1"></i>Closed</button>
+								<i class="ri-time-line ri-md text-gray-400 ml-2"></i>
+								<p class="ml-1 font-semibold text-sm text-gray-400">Created 5 days ago</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="xs:basis-[100%] sm:basis-[100%] md:basis-[100%]">
+					<div class=" rounded-lg border-2">
+						<div class="grid grid-flow-row auto-rows-max m-3">
+							<div class="flex justify-between">
+								<div class="flex ">
+									<div class="w-14 h-14 bg-slate-500 rounded-lg bg-cover" style="background-image: url(https://picsum.photos/200/300?random=8)"></div>
+									<div class="ml-2">
+										<p class="text-lg font-semibold">Senior QA Engineer</p>
+										<a href="/" class="text-sm cursor-pointer hover:text-blue-500">Dropsuite</a>
+									</div>
+								</div>
+								<i class="ri-bookmark-line ri-xl hover:text-blue-500 cursor-pointer"></i>
+							</div>
+							<div class="flex flex-row mt-2 items-center">
+								<i class="ri-map-pin-2-fill ri-lg"></i> 
+								<p class="font-semibold ml-1">Bandung</p>
+							</div>
+							<div class="flex flex-row mt-2 items-center">
+								<i class="ri-money-dollar-circle-line ri-lg"></i>
+								<p class="ml-1 font-semibold text-sm">IDR 10.500.000 - 18.000.000</p>
+							</div>
+							<div class="flex flex-row mt-2 items-center">
+								<i class="ri-briefcase-2-line"></i>
+								<p class="ml-1 font-semibold text-sm">3 - 5 years</p>
+							</div>
+							<div class="flex flex-row mt-2 items-center">
+								<button type="button" class="p-1 pr-2 text-xs bg-red-600 rounded-xl text-white flex items-center"><i class="ri-close-line mr-1"></i>Closed</button>
+								<i class="ri-time-line ri-md text-gray-400 ml-2"></i>
+								<p class="ml-1 font-semibold text-sm text-gray-400">Created 5 days ago</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
